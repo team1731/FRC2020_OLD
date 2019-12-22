@@ -1,8 +1,8 @@
-package frc.team2767.swerveexample.command;
+package frc.team1731.swerveexample.command;
 
 import edu.wpi.first.wpilibj.command.InstantCommand;
-import frc.team2767.swerveexample.Robot;
-import frc.team2767.swerveexample.subsystem.DriveSubsystem;
+import frc.team1731.swerveexample.Robot;
+import frc.team1731.swerveexample.subsystem.DriveSubsystem;
 
 public final class ZeroGyroCommand extends InstantCommand {
 

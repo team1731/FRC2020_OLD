@@ -1,10 +1,10 @@
-package frc.team2767.swerveexample.control;
+package frc.team1731.swerveexample.control;
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.PrintCommand;
-import frc.team2767.swerveexample.command.ZeroGyroCommand;
+import frc.team1731.swerveexample.command.ZeroGyroCommand;
 
 /** This assumes the use of an Interlink X Flight Simulator controller. */
 @SuppressWarnings("unused")

@@ -1,11 +1,11 @@
-package frc.team2767.swerveexample.command;
+package frc.team1731.swerveexample.command;
 
 import static org.strykeforce.thirdcoast.swerve.SwerveDrive.DriveMode.TELEOP;
 
 import edu.wpi.first.wpilibj.command.Command;
-import frc.team2767.swerveexample.Robot;
-import frc.team2767.swerveexample.control.DriverControls;
-import frc.team2767.swerveexample.subsystem.DriveSubsystem;
+import frc.team1731.swerveexample.Robot;
+import frc.team1731.swerveexample.control.DriverControls;
+import frc.team1731.swerveexample.subsystem.DriveSubsystem;
 
 public final class TeleOpDriveCommand extends Command {
   private static final double DEADBAND = 0.05;

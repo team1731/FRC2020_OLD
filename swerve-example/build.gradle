@@ -1,12 +1,12 @@
 plugins {
     id "java"
-    id "edu.wpi.first.GradleRIO" version "2019.1.1"
+    id "edu.wpi.first.GradleRIO" version "2019.3.2"
     id "idea"
     id "com.diffplug.gradle.spotless" version "3.16.0"
 }
 
 
-def ROBOT_MAIN_CLASS = "frc.team2767.swerveexample.Main"
+def ROBOT_MAIN_CLASS = "frc.team1731.swerveexample.Main"
 
 
 deploy {

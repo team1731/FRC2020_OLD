@@ -1,9 +1,9 @@
-package frc.team2767.swerveexample;
+package frc.team1731.swerveexample;
 
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.command.Scheduler;
-import frc.team2767.swerveexample.control.Controls;
-import frc.team2767.swerveexample.subsystem.DriveSubsystem;
+import frc.team1731.swerveexample.control.Controls;
+import frc.team1731.swerveexample.subsystem.DriveSubsystem;
 import java.util.Date;
 
 public class Robot extends TimedRobot {

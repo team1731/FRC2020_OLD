@@ -1,4 +1,4 @@
-package frc.team2767.swerveexample.subsystem;
+package frc.team1731.swerveexample.subsystem;
 
 import com.ctre.phoenix.motorcontrol.FeedbackDevice;
 import com.ctre.phoenix.motorcontrol.NeutralMode;
@@ -7,7 +7,7 @@ import com.ctre.phoenix.motorcontrol.can.TalonSRXConfiguration;
 import com.kauailabs.navx.frc.AHRS;
 import edu.wpi.first.wpilibj.SPI;
 import edu.wpi.first.wpilibj.command.Subsystem;
-import frc.team2767.swerveexample.command.TeleOpDriveCommand;
+import frc.team1731.swerveexample.command.TeleOpDriveCommand;
 import org.strykeforce.thirdcoast.swerve.SwerveDrive;
 import org.strykeforce.thirdcoast.swerve.SwerveDrive.DriveMode;
 import org.strykeforce.thirdcoast.swerve.SwerveDriveConfig;
@@ -84,11 +84,18 @@ public class DriveSubsystem extends Subsystem {
 
     Wheel[] wheels = new Wheel[4];
 
-    for (int i = 0; i < 4; i++) {
-      TalonSRX azimuthTalon = new TalonSRX(i);
+    //
+    // 2 wheel drive for now - because we have 4 talons...
+    //
+    // our CANbus IDs are:
+    //   2 & 6
+    //   3 & 7
+    //
+    for (int i = 0; i < 2; i++) {
+      TalonSRX azimuthTalon = new TalonSRX(i + 2);
       azimuthTalon.configAllSettings(azimuthConfig);
 
-      TalonSRX driveTalon = new TalonSRX(i + 10);
+      TalonSRX driveTalon = new TalonSRX(i + 6);
       driveTalon.configAllSettings(driveConfig);
       driveTalon.setNeutralMode(NeutralMode.Brake);
 
